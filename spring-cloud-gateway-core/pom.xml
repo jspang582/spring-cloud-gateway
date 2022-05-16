@@ -144,8 +144,8 @@
 	</dependencies>
 	<build>
 		<plugins>
-			<plugin>
-				<!-- Based on instructions here - https://kotlinlang.org/docs/reference/using-maven.html -->
+<!--			<plugin>
+				&lt;!&ndash; Based on instructions here - https://kotlinlang.org/docs/reference/using-maven.html &ndash;&gt;
 				<artifactId>kotlin-maven-plugin</artifactId>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<configuration>
@@ -177,7 +177,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
