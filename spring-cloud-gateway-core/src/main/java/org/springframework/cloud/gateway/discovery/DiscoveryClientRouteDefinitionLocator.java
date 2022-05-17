@@ -86,6 +86,7 @@ public class DiscoveryClientRouteDefinitionLocator implements RouteDefinitionLoc
 	private DiscoveryClientRouteDefinitionLocator(String discoveryClientName,
 			DiscoveryLocatorProperties properties) {
 		this.properties = properties;
+		// 如果没有配置routeIdPrefix属性，则默认discoveryClient.getClass().getSimpleName() + “_”
 		if (StringUtils.hasText(properties.getRouteIdPrefix())) {
 			routeIdPrefix = properties.getRouteIdPrefix();
 		}

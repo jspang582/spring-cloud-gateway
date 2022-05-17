@@ -24,6 +24,9 @@ import java.util.function.Predicate;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
+ * - After = 2022-05-18...........
+ * 匹配在指定日期之前发生的请求，入参是ZonedDateTime类型。
+ *
  * @author Spencer Gibb
  */
 public class BeforeRoutePredicateFactory

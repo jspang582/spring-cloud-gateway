@@ -38,6 +38,9 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.p
 import static org.springframework.http.server.PathContainer.parsePath;
 
 /**
+ * - Path = /order/**
+ * 路径匹配。
+ *
  * @author Spencer Gibb
  */
 public class PathRoutePredicateFactory

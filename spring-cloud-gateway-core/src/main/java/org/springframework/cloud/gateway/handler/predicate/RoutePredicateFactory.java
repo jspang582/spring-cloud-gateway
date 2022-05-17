@@ -28,6 +28,8 @@ import org.springframework.web.server.ServerWebExchange;
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.toAsyncPredicate;
 
 /**
+ * 路由断言工厂。
+ * 
  * @author Spencer Gibb
  */
 @FunctionalInterface

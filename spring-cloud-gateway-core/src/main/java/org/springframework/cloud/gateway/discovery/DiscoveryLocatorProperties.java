@@ -24,13 +24,19 @@ import org.springframework.cloud.gateway.filter.FilterDefinition;
 import org.springframework.cloud.gateway.handler.predicate.PredicateDefinition;
 import org.springframework.core.style.ToStringCreator;
 
+/**
+ * 网关自动发现属性
+ */
 @ConfigurationProperties("spring.cloud.gateway.discovery.locator")
 public class DiscoveryLocatorProperties {
 
+	// 是否开启通过微服务创建路由的功能，默认为false即不开启。
 	/** Flag that enables DiscoveryClient gateway integration. */
 	private boolean enabled = false;
 
 	/**
+	 * routId的前缀，默认discoveryClient.getClass().getSimpleName() + “_”。
+	 *
 	 * The prefix for the routeId, defaults to discoveryClient.getClass().getSimpleName()
 	 * + "_". Service Id will be appended to create the routeId.
 	 */
@@ -43,6 +49,8 @@ public class DiscoveryLocatorProperties {
 	private String includeExpression = "true";
 
 	/**
+	 * 为每个路由创建uri的spel表达式，默认为lb://'+serviceId。
+	 *
 	 * SpEL expression that create the uri for each route, defaults to: 'lb://'+serviceId.
 	 */
 	private String urlExpression = "'lb://'+serviceId";

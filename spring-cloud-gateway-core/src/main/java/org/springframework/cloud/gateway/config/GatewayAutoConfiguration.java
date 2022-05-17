@@ -165,6 +165,7 @@ import static org.springframework.cloud.gateway.config.HttpClientProperties.Pool
  * @author Ziemowit Stolarczyk
  */
 @Configuration(proxyBeanMethods = false)
+// 是否开启网关，默认开启
 @ConditionalOnProperty(name = "spring.cloud.gateway.enabled", matchIfMissing = true)
 @EnableConfigurationProperties
 @AutoConfigureBefore({ HttpHandlerAutoConfiguration.class,

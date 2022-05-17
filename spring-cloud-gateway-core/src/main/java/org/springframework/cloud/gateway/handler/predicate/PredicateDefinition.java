@@ -29,14 +29,20 @@ import org.springframework.validation.annotation.Validated;
 import static org.springframework.util.StringUtils.tokenizeToStringArray;
 
 /**
+ * 断言定义。
+ *
  * @author Spencer Gibb
  */
 @Validated
 public class PredicateDefinition {
 
+	// 名称
 	@NotNull
 	private String name;
 
+	/**
+	 * key、value集合，支持正则表达式。
+	 */
 	private Map<String, String> args = new LinkedHashMap<>();
 
 	public PredicateDefinition() {

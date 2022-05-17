@@ -27,6 +27,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
+ * 请求参数匹配，支持正则表达式。
+ *
  * @author Spencer Gibb
  */
 public class QueryRoutePredicateFactory

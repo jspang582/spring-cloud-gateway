@@ -28,6 +28,9 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
+ * - Header = id, 2
+ * 请求Header匹配，支持正则表达式。
+ *
  * @author Spencer Gibb
  */
 public class HeaderRoutePredicateFactory

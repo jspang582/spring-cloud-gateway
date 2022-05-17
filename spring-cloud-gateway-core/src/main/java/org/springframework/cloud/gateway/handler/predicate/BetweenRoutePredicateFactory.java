@@ -28,6 +28,9 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
+ * - After = 2022-05-18...........,2022-05-19---------
+ * 匹配在指定日期之之间发生的请求，入参是ZonedDateTime类型。
+ *
  * @author Spencer Gibb
  */
 public class BetweenRoutePredicateFactory

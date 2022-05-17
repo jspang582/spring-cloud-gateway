@@ -32,6 +32,8 @@ import org.springframework.expression.spel.support.StandardEvaluationContext;
 import org.springframework.util.Assert;
 
 /**
+ * 快捷配置，类似于公共方法。
+ *
  * @author Spencer Gibb
  */
 public interface ShortcutConfigurable {
@@ -74,6 +76,8 @@ public interface ShortcutConfigurable {
 	}
 
 	/**
+	 * 快捷配置。
+	 *
 	 * Returns hints about the number of args and the order for shortcut parsing.
 	 * @return the list of hints
 	 */

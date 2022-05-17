@@ -34,6 +34,8 @@ import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;
 
 /**
+ * 网关配置属性
+ *
  * @author Spencer Gibb
  */
 @ConfigurationProperties("spring.cloud.gateway")
@@ -43,6 +45,8 @@ public class GatewayProperties {
 	private final Log logger = LogFactory.getLog(getClass());
 
 	/**
+	 * 路由列表。
+	 *
 	 * List of Routes.
 	 */
 	@NotNull

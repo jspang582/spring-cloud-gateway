@@ -35,13 +35,17 @@ import org.springframework.validation.annotation.Validated;
 import static org.springframework.util.StringUtils.tokenizeToStringArray;
 
 /**
+ * 路由定义。包括路由id、路由到微服务的url、断言等属性。
+ *
  * @author Spencer Gibb
  */
 @Validated
 public class RouteDefinition {
 
+	// 路由id，全局唯一，一般配置成微服务名称
 	private String id;
 
+	// 路径匹配断言
 	@NotEmpty
 	@Valid
 	private List<PredicateDefinition> predicates = new ArrayList<>();
@@ -49,6 +53,11 @@ public class RouteDefinition {
 	@Valid
 	private List<FilterDefinition> filters = new ArrayList<>();
 
+	/**
+	 * 目标微服务的请求地址和端口。
+	 * 直接指定：http://localhost:8080
+	 * 支持协议：lb:mall-order
+	 */
 	@NotNull
 	private URI uri;
 

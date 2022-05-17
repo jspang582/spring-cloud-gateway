@@ -16,6 +16,9 @@
 
 package org.springframework.cloud.gateway.support;
 
+/**
+ * 定义配置接口。
+ */
 public interface Configurable<C> {
 
 	Class<C> getConfigClass();

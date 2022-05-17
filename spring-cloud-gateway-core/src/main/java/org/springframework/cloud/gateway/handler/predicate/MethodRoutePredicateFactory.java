@@ -27,6 +27,8 @@ import org.springframework.web.server.ServerWebExchange;
 import static java.util.Arrays.stream;
 
 /**
+ * 请求方式匹配。
+ *
  * @author Spencer Gibb
  * @author Dennis Menge
  */

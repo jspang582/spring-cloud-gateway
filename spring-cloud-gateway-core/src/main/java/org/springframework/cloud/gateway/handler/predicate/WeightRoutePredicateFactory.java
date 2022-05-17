@@ -35,6 +35,8 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.G
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.WEIGHT_ATTR;
 
 /**
+ * 权重匹配。
+ *
  * @author Spencer Gibb
  */
 // TODO: make this a generic Choose out of group predicate?

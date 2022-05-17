@@ -27,6 +27,9 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
+ * - Cookie = token, 123
+ * 请求Cookie匹配。
+ *
  * @author Spencer Gibb
  */
 public class CookieRoutePredicateFactory

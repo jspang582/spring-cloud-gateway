@@ -38,6 +38,8 @@ import org.springframework.web.server.ServerWebExchange;
 import static org.springframework.cloud.gateway.support.ShortcutConfigurable.ShortcutType.GATHER_LIST;
 
 /**
+ * 远程地址匹配。
+ *
  * @author Spencer Gibb
  */
 public class RemoteAddrRoutePredicateFactory
