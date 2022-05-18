@@ -22,6 +22,9 @@ import javax.validation.constraints.Max;
 
 import org.springframework.util.unit.DataSize;
 
+/**
+ * 通过spi机制添加自定义@Max注解对DataSize的校验逻辑
+ */
 // https://in.relation.to/2017/03/02/adding-custom-constraint-definitions-via-the-java-service-loader/
 public class MaxDataSizeValidator implements ConstraintValidator<Max, DataSize> {
 
