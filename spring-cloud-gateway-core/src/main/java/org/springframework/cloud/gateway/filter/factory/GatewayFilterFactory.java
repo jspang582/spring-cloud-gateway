@@ -26,6 +26,8 @@ import org.springframework.cloud.gateway.support.ShortcutConfigurable;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 
 /**
+ * 网关过滤器工厂。
+ *
  * @author Spencer Gibb
  */
 @FunctionalInterface

@@ -54,6 +54,8 @@ public class GatewayProperties {
 	private List<RouteDefinition> routes = new ArrayList<>();
 
 	/**
+	 * 针对每个路由的过滤器列表。
+	 *
 	 * List of filter definitions that are applied to every route.
 	 */
 	private List<FilterDefinition> defaultFilters = new ArrayList<>();

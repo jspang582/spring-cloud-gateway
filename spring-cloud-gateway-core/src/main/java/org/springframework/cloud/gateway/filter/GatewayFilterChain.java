@@ -22,6 +22,8 @@ import org.springframework.web.server.ServerWebExchange;
 import org.springframework.web.server.WebFilter;
 
 /**
+ * 允许WebFilter委托给链中的下一个的过滤器链。
+ *
  * Contract to allow a {@link WebFilter} to delegate to the next in the chain.
  *
  * @author Rossen Stoyanchev
@@ -30,6 +32,8 @@ import org.springframework.web.server.WebFilter;
 public interface GatewayFilterChain {
 
 	/**
+	 * 委托给链中的下一个WebFilter。
+	 *
 	 * Delegate to the next {@code WebFilter} in the chain.
 	 * @param exchange the current server exchange
 	 * @return {@code Mono<Void>} to indicate when request handling is complete

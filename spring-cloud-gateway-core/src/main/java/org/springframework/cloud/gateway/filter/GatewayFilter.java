@@ -22,6 +22,8 @@ import org.springframework.cloud.gateway.support.ShortcutConfigurable;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
+ * 网关过滤器，Web请求的链式处理。
+ *
  * Contract for interception-style, chained processing of Web requests that may be used to
  * implement cross-cutting, application-agnostic requirements such as security, timeouts,
  * and others. Specific to a Gateway
@@ -44,6 +46,8 @@ public interface GatewayFilter extends ShortcutConfigurable {
 	String VALUE_KEY = "value";
 
 	/**
+	 * 理Web请求，并(可选地)通过给定的GatewayFilterChain委托给下一个WebFilter。
+	 *
 	 * Process the Web request and (optionally) delegate to the next {@code WebFilter}
 	 * through the given {@link GatewayFilterChain}.
 	 * @param exchange the current server exchange
