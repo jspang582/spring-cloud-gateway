@@ -16,21 +16,16 @@
 
 package org.springframework.cloud.gateway.route;
 
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import org.springframework.cloud.gateway.filter.FilterDefinition;
+import org.springframework.cloud.gateway.handler.predicate.PredicateDefinition;
+import org.springframework.validation.annotation.Validated;
 
 import javax.validation.Valid;
 import javax.validation.ValidationException;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-
-import org.springframework.cloud.gateway.filter.FilterDefinition;
-import org.springframework.cloud.gateway.handler.predicate.PredicateDefinition;
-import org.springframework.validation.annotation.Validated;
+import java.net.URI;
+import java.util.*;
 
 import static org.springframework.util.StringUtils.tokenizeToStringArray;
 
@@ -54,9 +49,7 @@ public class RouteDefinition {
 	private List<FilterDefinition> filters = new ArrayList<>();
 
 	/**
-	 * 目标微服务的请求地址和端口。
-	 * 直接指定：http://localhost:8080
-	 * 支持协议：lb:mall-order
+	 * 目标微服务的请求地址和端口。 直接指定：http://localhost:8080 支持协议：lb:mall-order
 	 */
 	@NotNull
 	private URI uri;

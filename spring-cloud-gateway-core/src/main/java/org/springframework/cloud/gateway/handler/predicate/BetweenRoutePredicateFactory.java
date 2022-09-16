@@ -16,20 +16,18 @@
 
 package org.springframework.cloud.gateway.handler.predicate;
 
+import org.springframework.util.Assert;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.server.ServerWebExchange;
+
+import javax.validation.constraints.NotNull;
 import java.time.ZonedDateTime;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
-import javax.validation.constraints.NotNull;
-
-import org.springframework.util.Assert;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.server.ServerWebExchange;
-
 /**
- * - After = 2022-05-18...........,2022-05-19---------
- * 匹配在指定日期之之间发生的请求，入参是ZonedDateTime类型。
+ * - After = 2022-05-18...........,2022-05-19--------- 匹配在指定日期之之间发生的请求，入参是ZonedDateTime类型。
  *
  * @author Spencer Gibb
  */

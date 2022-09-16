@@ -16,15 +16,8 @@
 
 package org.springframework.cloud.gateway.handler.predicate;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.function.Predicate;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.core.style.ToStringCreator;
 import org.springframework.http.server.PathContainer;
 import org.springframework.util.CollectionUtils;
@@ -34,12 +27,17 @@ import org.springframework.web.util.pattern.PathPattern;
 import org.springframework.web.util.pattern.PathPattern.PathMatchInfo;
 import org.springframework.web.util.pattern.PathPatternParser;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Predicate;
+
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.putUriTemplateVariables;
 import static org.springframework.http.server.PathContainer.parsePath;
 
 /**
- * - Path = /order/**
- * 路径匹配。
+ * - Path = /order/** 路径匹配。
  *
  * @author Spencer Gibb
  */
